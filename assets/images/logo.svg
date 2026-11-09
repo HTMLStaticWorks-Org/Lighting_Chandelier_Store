@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" fill="none">
+  <!-- Outer Architectural Octagon / Frame -->
+  <rect x="4" y="4" width="56" height="56" rx="2" fill="#252525" stroke="#C6A56B" stroke-width="2"/>
+  <rect x="8" y="8" width="48" height="48" rx="1" stroke="#C6A56B" stroke-width="0.75" stroke-opacity="0.45"/>
+  <!-- Suspension Rod -->
+  <line x1="32" y1="8" x2="32" y2="20" stroke="#C6A56B" stroke-width="1.75"/>
+  <!-- Chandelier Upper Tier -->
+  <path d="M16 26H48" stroke="#C6A56B" stroke-width="2" stroke-linecap="round"/>
+  <path d="M20 26C20 20.5 25.4 17 32 17C38.6 17 44 20.5 44 26" stroke="#C6A56B" stroke-width="1.5"/>
+  <!-- Chandelier Middle Tier -->
+  <path d="M21 33H43" stroke="#F8F7F2" stroke-width="1.75" stroke-linecap="round"/>
+  <!-- Chandelier Lower Tier -->
+  <path d="M26 40H38" stroke="#C6A56B" stroke-width="1.75" stroke-linecap="round"/>
+  <!-- Crystal Drops -->
+  <line x1="19" y1="26" x2="19" y2="31" stroke="#C6A56B" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="45" y1="26" x2="45" y2="31" stroke="#C6A56B" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="24" y1="33" x2="24" y2="38" stroke="#F8F7F2" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="40" y1="33" x2="40" y2="38" stroke="#F8F7F2" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Central Prism Finial Star -->
+  <path d="M32 43L34.2 48.3L39.5 50.5L34.2 52.7L32 58L29.8 52.7L24.5 50.5L29.8 48.3L32 43Z" fill="#C6A56B"/>
+</svg>
+
