@@ -350,12 +350,12 @@ p.lead {
 .page-inner-hero {
   background-color: var(--color-warm-ivory);
   border-bottom: 1px solid var(--color-warm-grey-border);
-  height: 230px;
-  min-height: 230px;
+  height: 260px;
+  min-height: 260px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1.25rem 0;
+  padding: 1.5rem 0;
   position: relative;
   text-align: center;
   width: 100%;
@@ -364,38 +364,38 @@ p.lead {
 
 .page-inner-hero .container {
   width: 100%;
-  max-width: 960px;
+  max-width: 1000px;
 }
 
 .page-inner-hero .eyebrow {
   display: inline-block;
   font-family: var(--font-sans);
-  font-size: 0.7rem;
-  letter-spacing: 0.16em;
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--color-champagne-gold);
   font-weight: 600;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.55rem;
 }
 
 .page-inner-hero h1 {
   font-family: var(--font-serif);
-  font-size: clamp(1.65rem, 2.2vw, 2.15rem);
+  font-size: clamp(1.85rem, 2.6vw, 2.5rem);
   font-weight: 600;
-  line-height: 1.2;
+  line-height: 1.18;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--color-deep-charcoal);
   margin-top: 0;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.65rem;
 }
 
 .page-inner-hero .lead {
   font-family: var(--font-sans);
-  font-size: clamp(0.875rem, 1vw, 0.95rem);
-  line-height: 1.55;
+  font-size: clamp(0.9375rem, 1.1vw, 1.05rem);
+  line-height: 1.6;
   color: var(--color-charcoal-muted);
-  max-width: 680px;
+  max-width: 720px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 0;
@@ -404,20 +404,24 @@ p.lead {
 @media (max-width: 991px) {
   .page-inner-hero {
     height: auto;
-    min-height: 210px;
-    padding: 2rem 0;
+    min-height: 230px;
+    padding: 2.25rem 0;
+  }
+
+  .page-inner-hero h1 {
+    font-size: clamp(1.65rem, 4vw, 2.15rem);
   }
 }
 
 @media (max-width: 575px) {
   .page-inner-hero {
     height: auto;
-    min-height: 200px;
-    padding: 1.75rem 0;
+    min-height: 210px;
+    padding: 2rem 0;
   }
 
   .page-inner-hero h1 {
-    font-size: clamp(1.4rem, 5.5vw, 1.75rem);
+    font-size: clamp(1.45rem, 5.8vw, 1.85rem);
   }
 }
 
