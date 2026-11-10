@@ -325,6 +325,24 @@ p.lead {
   max-width: 680px;
 }
 
+/* Desktop Section Typography Refinement (Lightly reduced for desktop viewports alone) */
+@media (min-width: 1025px) {
+  h2,
+  .section-header h2,
+  .section-header-split h2,
+  section h2 {
+    font-size: clamp(2.15rem, 2.7vw, 2.65rem); /* Lightly reduced from 3.25rem (52px -> 42.4px) */
+    line-height: 1.2;
+  }
+
+  .section-header .lead,
+  .section-header-split .lead,
+  section p.lead {
+    font-size: clamp(1rem, 1.1vw, 1.08rem); /* Lightly reduced from 1.25rem (20px -> 17.3px) */
+    line-height: 1.6;
+  }
+}
+
 /* --------------------------------------------------------------------------
    SHARED INNER PAGE HERO (Products, Lighting Guide, About, Contact)
    Guarantees exact uniform height, vertical centering, and typography across all subpages
