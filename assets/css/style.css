@@ -3822,6 +3822,49 @@ html[data-theme="dark"] .guide-nav-link.active {
   color: var(--color-champagne-gold);
 }
 
+/* Contact Page Social Buttons */
+.contact-social-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: 0.5rem;
+}
+
+.contact-social-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.95rem;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  color: var(--color-deep-charcoal);
+  background-color: var(--color-warm-grey-light);
+  border: 1px solid var(--color-warm-grey-border);
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all var(--trans-fast);
+}
+
+.contact-social-btn i {
+  font-size: 0.95rem;
+  color: var(--color-champagne-gold);
+  transition: transform var(--trans-fast), color var(--trans-fast);
+}
+
+.contact-social-btn:hover {
+  background-color: var(--color-champagne-gold);
+  border-color: var(--color-champagne-gold);
+  color: #141413;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(198, 165, 107, 0.25);
+}
+
+.contact-social-btn:hover i {
+  color: #141413;
+  transform: scale(1.12);
+}
+
 /* Enquiry Form */
 .enquiry-form-card {
   background: var(--color-white);
@@ -4714,6 +4757,22 @@ html[data-theme="dark"] .site-footer .social-link {
 }
 
 html[data-theme="dark"] .site-footer .social-link:hover {
+  color: #141413;
+}
+
+html[data-theme="dark"] .contact-social-btn {
+  background-color: rgba(255, 255, 255, 0.04);
+  border-color: rgba(198, 165, 107, 0.25);
+  color: #F5F2EB;
+}
+
+html[data-theme="dark"] .contact-social-btn:hover {
+  background-color: var(--color-champagne-gold);
+  border-color: var(--color-champagne-gold);
+  color: #141413;
+}
+
+html[data-theme="dark"] .contact-social-btn:hover i {
   color: #141413;
 }
 
