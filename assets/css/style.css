@@ -2764,9 +2764,6 @@ p.lead {
 /* --------------------------------------------------------------------------
    11. PRODUCTS PAGE STYLES & FILTER SYSTEM
    -------------------------------------------------------------------------- */
-.products-hero-wrap {
-  /* Inherits styles from .page-inner-hero */
-}
 
 /* Category Quick Filter Navigation (Positioned below the hero section) */
 .category-filter-nav {
