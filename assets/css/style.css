@@ -2935,9 +2935,36 @@ p.lead {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 1.25rem;
   margin-bottom: 1.75rem;
   font-size: 0.875rem;
   color: var(--color-charcoal-muted);
+}
+
+.catalog-status-left {
+  display: flex;
+  align-items: center;
+}
+
+#product-count-display {
+  font-weight: 500;
+  color: var(--color-deep-charcoal);
+  white-space: nowrap;
+}
+
+.catalog-status-right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.catalog-status-note {
+  font-size: 0.8125rem;
+  color: var(--color-charcoal-muted);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
 }
 
 .product-catalogue-grid {
@@ -4560,6 +4587,56 @@ html[data-theme="dark"] .showroom-map-info-left p {
     grid-template-columns: 1fr;
   }
 
+  /* Product Page Status Bar in Mobile & 768px */
+  .catalog-status-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.65rem;
+    margin-bottom: 1.5rem;
+    padding: 0.85rem 1rem;
+    background-color: var(--color-warm-grey-light);
+    border: 1px solid var(--color-warm-grey-border);
+    border-radius: 6px;
+  }
+
+  .catalog-status-left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .catalog-status-left #product-count-display {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--color-deep-charcoal);
+  }
+
+  .catalog-status-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    width: 100%;
+    border-top: 1px solid var(--color-warm-grey-border);
+    padding-top: 0.5rem;
+  }
+
+  .catalog-status-note {
+    font-size: 0.78rem;
+    line-height: 1.45;
+    color: var(--color-charcoal-muted);
+  }
+
+  .catalog-status-right .btn-clear-filters {
+    padding: 0.2rem 0;
+    font-size: 0.75rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+  }
+
   .calc-inputs-grid {
     grid-template-columns: 1fr;
   }
@@ -4791,6 +4868,19 @@ html[data-theme="dark"] .contact-social-btn:hover {
 
 html[data-theme="dark"] .contact-social-btn:hover i {
   color: #141413;
+}
+
+html[data-theme="dark"] .catalog-status-bar {
+  background-color: rgba(255, 255, 255, 0.03);
+  border-color: rgba(198, 165, 107, 0.2);
+}
+
+html[data-theme="dark"] .catalog-status-left #product-count-display {
+  color: #F5F2EB;
+}
+
+html[data-theme="dark"] .catalog-status-right {
+  border-top-color: rgba(198, 165, 107, 0.15);
 }
 
 html[data-theme="dark"] .material-card {

@@ -260,10 +260,14 @@
 
         <!-- Status Bar -->
         <div class="catalog-status-bar">
-          <span id="product-count-display">Showing 16 lighting fixtures</span>
-          <div style="display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap;">
-            <span style="font-size: 0.8125rem;"><i class="bi bi-shield-check text-gold"></i> All prices in Indian Rupee (INR) inclusive of atelier crating</span>
-            <button id="filter-clear" class="btn-clear-filters" title="Reset all active filters" style="padding: 0.25rem 0;">
+          <div class="catalog-status-left">
+            <span id="product-count-display">Showing 16 lighting fixtures</span>
+          </div>
+          <div class="catalog-status-right">
+            <span class="catalog-status-note">
+              <i class="bi bi-shield-check text-gold"></i> All prices in Indian Rupee (INR) inclusive of atelier crating
+            </span>
+            <button id="filter-clear" class="btn-clear-filters" title="Reset all active filters">
               <i class="bi bi-arrow-counterclockwise"></i> Clear All Filters
             </button>
           </div>
