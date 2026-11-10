@@ -502,14 +502,14 @@ p.lead {
 /* Outline Light (for dark sections) */
 .btn-outline-light {
   background-color: transparent;
-  color: var(--color-warm-ivory);
-  border: 1px solid rgba(248, 247, 242, 0.4);
+  color: #F8F7F2;
+  border: 1px solid rgba(248, 247, 242, 0.45);
 }
 
 .btn-outline-light:hover {
-  background-color: var(--color-warm-ivory);
-  color: var(--color-deep-charcoal);
-  border-color: var(--color-warm-ivory);
+  background-color: #F8F7F2;
+  color: #141413;
+  border-color: #F8F7F2;
   transform: translateY(-2px);
 }
 
@@ -4616,6 +4616,20 @@ html[data-theme="dark"] .btn-outline:hover {
   background-color: var(--color-champagne-gold);
   border-color: var(--color-champagne-gold);
   color: #141413;
+}
+
+html[data-theme="dark"] .btn-outline-light,
+html[data-theme="dark"] .hero-home-2 .btn-outline-light {
+  color: #F8F7F2 !important;
+  border-color: rgba(248, 247, 242, 0.45) !important;
+  background-color: transparent !important;
+}
+
+html[data-theme="dark"] .btn-outline-light:hover,
+html[data-theme="dark"] .hero-home-2 .btn-outline-light:hover {
+  background-color: #F8F7F2 !important;
+  color: #141413 !important;
+  border-color: #F8F7F2 !important;
 }
 
 html[data-theme="dark"] .product-badge {
