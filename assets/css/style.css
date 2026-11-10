@@ -344,18 +344,18 @@ p.lead {
 }
 
 /* --------------------------------------------------------------------------
-   SHARED INNER PAGE HERO (Products, Lighting Guide, About, Contact)
-   Guarantees exact uniform height, vertical centering, and typography across all subpages
+   SHARED INNER PAGE HERO (About, Products, Lighting Guide, Contact)
+   Strictly maintains identical uniform height and typography across all subpages on desktop
    -------------------------------------------------------------------------- */
 .page-inner-hero {
   background-color: var(--color-warm-ivory);
   border-bottom: 1px solid var(--color-warm-grey-border);
-  height: 260px;
-  min-height: 260px;
+  height: 240px;
+  min-height: 240px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1.5rem 0;
+  padding: 1.25rem 0;
   position: relative;
   text-align: center;
   width: 100%;
@@ -364,64 +364,85 @@ p.lead {
 
 .page-inner-hero .container {
   width: 100%;
-  max-width: 1000px;
+  max-width: 1100px;
 }
 
 .page-inner-hero .eyebrow {
   display: inline-block;
   font-family: var(--font-sans);
-  font-size: 0.75rem;
-  letter-spacing: 0.18em;
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
   color: var(--color-champagne-gold);
   font-weight: 600;
-  margin-bottom: 0.55rem;
+  margin-bottom: 0.45rem;
 }
 
 .page-inner-hero h1 {
   font-family: var(--font-serif);
-  font-size: clamp(1.85rem, 2.6vw, 2.5rem);
+  font-size: clamp(1.65rem, 2.1vw, 2.15rem);
   font-weight: 600;
   line-height: 1.18;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--color-deep-charcoal);
   margin-top: 0;
-  margin-bottom: 0.65rem;
+  margin-bottom: 0.5rem;
 }
 
 .page-inner-hero .lead {
   font-family: var(--font-sans);
-  font-size: clamp(0.9375rem, 1.1vw, 1.05rem);
-  line-height: 1.6;
+  font-size: clamp(0.875rem, 1vw, 0.95rem);
+  line-height: 1.55;
   color: var(--color-charcoal-muted);
-  max-width: 720px;
+  max-width: 760px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 0;
 }
 
+@media (min-width: 1025px) {
+  .page-inner-hero {
+    height: 240px !important;
+    min-height: 240px !important;
+    max-height: 240px !important;
+    overflow: hidden;
+  }
+
+  .page-inner-hero h1 {
+    font-size: 2.1rem !important; /* Uniform exact font size across all inner pages on desktop */
+    line-height: 1.15 !important;
+    white-space: nowrap; /* Stays on 1 clean line across all 4 pages on desktop */
+  }
+
+  .page-inner-hero .lead {
+    font-size: 0.95rem !important; /* Uniform exact font size across all inner pages on desktop */
+    line-height: 1.55 !important;
+    max-width: 780px;
+  }
+}
+
 @media (max-width: 991px) {
   .page-inner-hero {
     height: auto;
-    min-height: 230px;
+    min-height: 220px;
     padding: 2.25rem 0;
   }
 
   .page-inner-hero h1 {
-    font-size: clamp(1.65rem, 4vw, 2.15rem);
+    font-size: clamp(1.55rem, 3.8vw, 2rem);
   }
 }
 
 @media (max-width: 575px) {
   .page-inner-hero {
     height: auto;
-    min-height: 210px;
-    padding: 2rem 0;
+    min-height: 200px;
+    padding: 1.75rem 0;
   }
 
   .page-inner-hero h1 {
-    font-size: clamp(1.45rem, 5.8vw, 1.85rem);
+    font-size: clamp(1.35rem, 5.5vw, 1.75rem);
   }
 }
 
