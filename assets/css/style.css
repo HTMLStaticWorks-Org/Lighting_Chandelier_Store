@@ -3942,36 +3942,41 @@ textarea.form-control {
 
 /* Contact Form Action Buttons */
 .contact-form-actions {
-  display: flex;
-  gap: 1rem;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  align-items: stretch;
   margin-top: 1.5rem;
   width: 100%;
 }
 
-.contact-form-actions .btn {
-  flex: 1 1 0;
+.contact-form-actions .btn,
+.contact-form-actions .btn-lg {
+  width: 100%;
+  min-height: 48px;
+  height: 100%;
+  padding: 0.72rem 0.65rem !important;
+  font-size: clamp(0.78rem, 1.1vw, 0.85rem) !important;
+  font-weight: 600;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   box-sizing: border-box;
+  white-space: nowrap;
+  gap: 0.45rem;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 540px) {
   .contact-form-actions {
-    flex-direction: column;
-    align-items: stretch;
+    grid-template-columns: 1fr;
     gap: 0.75rem;
-    width: 100%;
   }
 
-  .contact-form-actions .btn {
+  .contact-form-actions .btn,
+  .contact-form-actions .btn-lg {
     width: 100%;
-    flex: none;
-    display: flex;
-    justify-content: center;
-    text-align: center;
+    min-height: 48px;
   }
 }
 
@@ -4486,9 +4491,19 @@ html[data-theme="dark"] .showroom-map-info-left p {
   }
 
   .contact-grid {
-    grid-template-columns: 1.15fr 1fr;
-    gap: 2.5rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
     align-items: start;
+  }
+
+  .enquiry-form-card {
+    padding: clamp(1.75rem, 3.2vw, 2.5rem);
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+    margin-bottom: 0;
   }
 
   .filter-control-panel {
@@ -4551,6 +4566,8 @@ html[data-theme="dark"] .showroom-map-info-left p {
 
   .form-row {
     grid-template-columns: 1fr;
+    gap: 0;
+    margin-bottom: 0;
   }
 
   .footer-top {
