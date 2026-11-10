@@ -2408,10 +2408,10 @@ p.lead {
 
 .hero-home-2-content h1 {
   color: var(--color-warm-ivory);
-  font-size: clamp(2.75rem, 6.5vw, 5.5rem);
-  line-height: 1.05;
-  margin-bottom: 1.5rem;
-  letter-spacing: -0.02em;
+  font-size: clamp(2.25rem, 4.2vw, 3.65rem);
+  line-height: 1.1;
+  margin-bottom: 1.25rem;
+  letter-spacing: 0.01em;
 }
 
 .hero-home-2-content p {
